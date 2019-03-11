@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>The Power Of JavaScript: Generating Visuals</title>
+    <title>HTML Blogging</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -59,91 +59,15 @@
     <div class="post-date">
         <time>March 11, 2019 </time>
     </div>
-    <h1 class="post-title">The Power Of JavaScript: Generating Visuals</h1>
-    <h2 id="art-and-code-collide">Art and Code Collide</h2>
-
-<p>As somebody who has a huge interest in game development, I figured I would try to express this with an eye catching background for my website.</p>
-
-<p>The first program I ever wrote, many years ago - was a simple tool that generated interesting mathematical shapes and sacred geometry. I was fascinated by the concept of generative art and obviously had to show <strong>everyone</strong> what I’d made. I don’t think my family understood what the point was, but it ignited a deep curiosity in me.</p>
-
-<p>My college course was in Interactive Digital Media. I had some great tutors, but there wasn’t much in the way of specialisation. One week, we’d be doing some 3D modelling, another - game programming, the next - video editing. It was great exposure to each of these industries and artforms, but didn’t really allow us to deep dive into any one subject that we really clicked with.</p>
-
-<p>I was encouraged to continue exploring digital media and head to university, but instead decided to pursue an IT career. The creativity never died out however, and I carried on making digital art, video games, editing videos etc. as a hobby, and occasionally, for a bit of pocket money.</p>
-
-<hr />
-
-<h2 id="game-jam">Game Jam</h2>
-
-<p>A while ago, just as I was starting to lose touch with my creativity - I entered a 48 hour game jam - competitions in which a theme is chosen that you have to make a game about. You have to make the art, music and code within the time frame, and at the end, participants vote eachothers entries based on set categories. These are great fun! And an effective way of stress-testing yourself and seeing what you’re capable of.</p>
-
-<p>My entry was received <strong>really</strong> well. Considering I’d never published a game before, this re-ignited that desire to create interactive media and artistic programming again. All the experience I’d had making music, experimenting with software, 3D modelling, using Adobe Creative Suite etc. as a hobby and throughout college all came together to something I was actually proud of… an un-paid project that I was actually able to finish! I realised I was capable of creating things that people actually liked!</p>
-
-<p>Selling indie video games is difficult work. The market is extremely saturated. Whilst I still plan on releasing some games at some point, I decided that I couldn’t work on something consistently that would provide a good ROI, particularly whilst working a full time job. I put the project to cryo-sleep for the time being…</p>
-
-<hr />
-
-<h2 id="business-and-creativity">Business and Creativity</h2>
-
-<p>I know the IT industry pretty well. I have progressed in it quickly and through various sectors and positions. If there’s one element of it that always got under my skin, it was the public perception of IT professionals. You might have seen ‘The IT Crowd’… IT departments are still often put in a dark corner of the windows where the windows are blocked out.</p>
-
-<p>It’s an old fashioned way of thinking… IT is one of the most creative and artistic industries there is. Innovation happens all of the time, and the skillset and knowledge that a talented IT technician has frequently cross over into the world of art and design. Even the seemingly boring stuff, like file formats, video encoding, hosting technologies, network architecture etc. Having subject knowledge in these areas can make you a better designer, can allow you to experiment and push the boundaries of the creative world.</p>
-
-<p>I wanted to distance myself from the stereotype of ‘IT Technician’, and prove that there is such a thing as somebody who can solve problems, whilst creating solutions and original pieces of work. My brand needed to show this…</p>
-
-<p>Technology is the backbone of modern marketing. And creativity is at the core of innovation.</p>
-
-<hr />
-
-<h2 id="websites-of-the-future">Websites Of The Future</h2>
-
-<p>A little while ago, a friend of mine pointed me towards paper.js (http://paperjs.org/), a powerful JavaSript library for creating interactive, animated vector drawings. I put it in my mental archive and thought about how I might use something like that.</p>
-
-<p>Whilst working out the aesthetic of my website, I did some research into some of the available libraries and which ones were the most powerful and versitle. I came across two that spoke to me:</p>
-
-<h3 id="particlesjs">Particles.js</h3>
-
-<p>https://vincentgarreau.com/particles.js/</p>
-
-<p>I’d never rendered anything like this in a browser before - so was concerned about things like performance and compatibility. The demo was very impressive, so I decided to start experimenting with it. It certainly had the generative, futuristic look I was going for.</p>
-
-<p><img src="images/particlesjs.PNG" alt="Particles JS" /></p>
-
-<p>It took me a while to work out the dependencies, and how to properly integrate something like this into the background of a site without causing distortion to the other elements. Eventually, I got it working. It looked great! (Maybe I had rose-tinted goggles on from the hours of development at this point) So I sent it to somebody to test.</p>
-
-<p>They opened it up on their work computer, and their response was <strong>this has slowed my computer down so much, everything is crawling</strong>! Clearly, this is <strong>not</strong> ideal, so I checked the CPU usage. It was <strong>extremely high</strong>! I run a half decent processor in my rig, but my demographic would primarily be using business grade laptops… I got to work to fix this, added some alterations to the code, and with the help of an FPS lock function limiting the frequency that the calculations were called, I drastically reduced how hungry the script was.</p>
-
-<p>Stage one of my background was complete!</p>
-
-<hr />
-
-<h2 id="threejs">Three.js</h2>
-
-<p>https://threejs.org/</p>
-
-<p>Then… I discovered three.js. The website has some examples of things that have been built using this library, and some of them are absolutely stunning. Some of the most unique and inspiring websites I’ve ever come across all sit on this one page, but there are not many, 100 - 120 at most. The library allows 3D models, animations, interactivity, to be rendered right within the browser using WebGL. It also supports GPU acceleration, so that CPU issue I had with particles? Won’t see that here. I had never used anything like this before, with the exception of a little bit of Unity programming, but I knew that this was what I was looking for. I wanted my website to look like it was from the future, like it was a terminal on a spaceship. WebGL, a completely new technology to me, was the answer.</p>
-
-<p>I got to work with creating the 3D object that I wanted, I went through a few iterations until I got what I thought looked good. I installed appropriate blender plugins, modelled some geometry that I liked, and exported the model. I studied countless three.js examples online, trawled through source code, and could not get it working like I expected.</p>
-
-<p><img src="images/blenderSphere.PNG" alt="Blender" /></p>
-
-<p>I was getting black boxes, console errors, dependency issues (none of which were a fault of the library itself), but with some persistence, I managed to get <strong>something</strong> to render in my browser.</p>
-
-<p><strong>EUREKA!</strong></p>
-
-<p>Now, I had to try and somehow implement this into my website without breaking anything else…</p>
-
-<p>After much tinkering, I got my desired effect. It might not be to everybodies taste, but the website now has live WebGL rendering, and it’s efficient - even able to run in mobile browsers. From here on out, I can start experimenting with interactivity, more complex animation, rendering, shadow casting. Yet another technology rabbit hole to get lost and inspired in…</p>
-
-<p><img src="images/siteSphere.PNG" alt="SiteBG" /></p>
-
-<p><img src="images/siteSphereDark.PNG" alt="SiteBG" /></p>
+    <h1 class="post-title">HTML Blogging</h1>
+    <h2 id="what-a-headache-this-is">What a headache this is!</h2>
 
 </div>
 <div class="container">
     <ul class="rrssb-buttons clearfix">
     <li class="rrssb-email">
     <!-- Replace subject with your message using URL Endocding: http://meyerweb.com/eric/tools/dencoder/ -->
-        <a href="mailto:?subject=The Power Of JavaScript: Generating Visuals&amp;body=Check out: http://localhost:4000/html-blog-testing.html">
+        <a href="mailto:?subject=HTML Blogging&amp;body=Check out: http://localhost:4000/html-blog-testing.html">
             <span class="rrssb-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"><path d="M20.11 26.147c-2.335 1.05-4.36 1.4-7.124 1.4C6.524 27.548.84 22.916.84 15.284.84 7.343 6.602.45 15.4.45c6.854 0 11.8 4.7 11.8 11.252 0 5.684-3.193 9.265-7.398 9.3-1.83 0-3.153-.934-3.347-2.997h-.077c-1.208 1.986-2.96 2.997-5.023 2.997-2.532 0-4.36-1.868-4.36-5.062 0-4.75 3.503-9.07 9.11-9.07 1.713 0 3.7.4 4.6.972l-1.17 7.203c-.387 2.298-.115 3.3 1 3.4 1.674 0 3.774-2.102 3.774-6.58 0-5.06-3.27-8.994-9.304-8.994C9.05 2.87 3.83 7.545 3.83 14.97c0 6.5 4.2 10.2 10 10.202 1.987 0 4.09-.43 5.647-1.245l.634 2.22zM16.647 10.1c-.31-.078-.7-.155-1.207-.155-2.572 0-4.596 2.53-4.596 5.53 0 1.5.7 2.4 1.9 2.4 1.44 0 2.96-1.83 3.31-4.088l.592-3.72z"/></svg></span>
             <span class="rrssb-text">email</span>
         </a>
@@ -157,13 +81,13 @@
     </li>
     <li class="rrssb-twitter">
         <!-- Replace href with your Meta and URL information  -->
-        <a href="https://twitter.com/intent/tweet?text=The Power Of JavaScript: Generating Visuals&amp;url=http://localhost:4000/html-blog-testing.html" class="popup">
+        <a href="https://twitter.com/intent/tweet?text=HTML Blogging&amp;url=http://localhost:4000/html-blog-testing.html" class="popup">
             <span class="rrssb-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"><path d="M24.253 8.756C24.69 17.08 18.297 24.182 9.97 24.62a15.093 15.093 0 0 1-8.86-2.32c2.702.18 5.375-.648 7.507-2.32a5.417 5.417 0 0 1-4.49-3.64c.802.13 1.62.077 2.4-.154a5.416 5.416 0 0 1-4.412-5.11 5.43 5.43 0 0 0 2.168.387A5.416 5.416 0 0 1 2.89 4.498a15.09 15.09 0 0 0 10.913 5.573 5.185 5.185 0 0 1 3.434-6.48 5.18 5.18 0 0 1 5.546 1.682 9.076 9.076 0 0 0 3.33-1.317 5.038 5.038 0 0 1-2.4 2.942 9.068 9.068 0 0 0 3.02-.85 5.05 5.05 0 0 1-2.48 2.71z"/></svg></span>
             <span class="rrssb-text">twitter</span>
         </a>
     </li>
     <li class="rrssb-linkedin">
-        <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/html-blog-testing.html&amp;title=The Power Of JavaScript: Generating Visuals&amp;summary=The Power Of JavaScript: Generating Visuals" class="popup">
+        <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/html-blog-testing.html&amp;title=HTML Blogging&amp;summary=HTML Blogging" class="popup">
             <span class="rrssb-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewbox="0 0 28 28">
                     <path d="M25.424 15.887v8.447h-4.896v-7.882c0-1.98-.71-3.33-2.48-3.33-1.354 0-2.158.91-2.514 1.802-.13.315-.162.753-.162 1.194v8.216h-4.9s.067-13.35 0-14.73h4.9v2.087c-.01.017-.023.033-.033.05h.032v-.05c.65-1.002 1.812-2.435 4.414-2.435 3.222 0 5.638 2.106 5.638 6.632zM5.348 2.5c-1.676 0-2.772 1.093-2.772 2.54 0 1.42 1.066 2.538 2.717 2.546h.032c1.71 0 2.77-1.132 2.77-2.546C8.056 3.593 7.02 2.5 5.344 2.5h.005zm-2.48 21.834h4.896V9.604H2.867v14.73z"></path>
@@ -182,7 +106,7 @@
             <span class="rrssb-text">google+</span></a>
     </li>
     <li class="rrssb-pinterest">
-        <a href="http://pinterest.com/pin/create/button/?url=http://localhost:4000/html-blog-testing.html&amp;description=The Power Of JavaScript: Generating Visuals"><span class="rrssb-icon">
+        <a href="http://pinterest.com/pin/create/button/?url=http://localhost:4000/html-blog-testing.html&amp;description=HTML Blogging"><span class="rrssb-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewbox="0 0 28 28">
                 <path d="M14.02 1.57c-7.06 0-12.784 5.723-12.784 12.785S6.96 27.14 14.02 27.14c7.062 0 12.786-5.725 12.786-12.785 0-7.06-5.724-12.785-12.785-12.785zm1.24 17.085c-1.16-.09-1.648-.666-2.558-1.22-.5 2.627-1.113 5.146-2.925 6.46-.56-3.972.822-6.952 1.462-10.117-1.094-1.84.13-5.545 2.437-4.632 2.837 1.123-2.458 6.842 1.1 7.557 3.71.744 5.226-6.44 2.924-8.775-3.324-3.374-9.677-.077-8.896 4.754.19 1.178 1.408 1.538.49 3.168-2.13-.472-2.764-2.15-2.683-4.388.132-3.662 3.292-6.227 6.46-6.582 4.008-.448 7.772 1.474 8.29 5.24.58 4.254-1.815 8.864-6.1 8.532v.003z"></path>
             </svg></span><span class="rrssb-text">pinterest</span></a>
