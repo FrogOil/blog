@@ -1,0 +1,7 @@
+1: Create _post using appropriate format.
+2) run "jekyll build", you can set --watch if you'd like live updates.
+3) run "jekyll serve", you leave leave this running to see live changes. 
+
+4) git add .
+5) git commit -m "message" (this only commits locally!)
+6) push changes to remote master with: git push -u origin master
