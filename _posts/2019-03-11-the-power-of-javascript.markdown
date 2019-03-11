@@ -52,7 +52,7 @@ https://vincentgarreau.com/particles.js/
 
 I'd never rendered anything like this in a browser before - so was concerned about things like performance and compatibility. The demo was very impressive, so I decided to start experimenting with it. It certainly had the generative, futuristic look I was going for. 
 
-![Particles JS](images/van-gogh.jpg)
+![Particles JS](images/particlesjs.PNG)
 
 It took me a while to work out the dependencies, and how to properly integrate something like this into the background of a site without causing distortion to the other elements. Eventually, I got it working. It looked great! (Maybe I had rose-tinted goggles on from the hours of development at this point) So I sent it to somebody to test. 
 
@@ -70,7 +70,7 @@ Then... I discovered three.js. The website has some examples of things that have
 
 I got to work with creating the 3D object that I wanted, I went through a few iterations until I got what I thought looked good. I installed appropriate blender plugins, modelled some geometry that I liked, and exported the model. I studied countless three.js examples online, trawled through source code, and could not get it working like I expected. 
 
-![Blender](images/blenderSphere.png)
+![Blender](images/blenderSphere.PNG)
 
 I was getting black boxes, console errors, dependency issues (none of which were a fault of the library itself), but with some persistence, I managed to get **something** to render in my browser. 
 
@@ -80,6 +80,6 @@ Now, I had to try and somehow implement this into my website without breaking an
 
 After much tinkering, I got my desired effect. It might not be to everybodies taste, but the website now has live WebGL rendering, and it's efficient - even able to run in mobile browsers. From here on out, I can start experimenting with interactivity, more complex animation, rendering, shadow casting. Yet another technology rabbit hole to get lost and inspired in... 
 
-![SiteBG](images/siteSphere.png)
+![SiteBG](images/siteSphere.PNG)
 
 ![SiteBG](images/siteSphereDark.PNG)
