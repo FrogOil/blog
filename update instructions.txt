@@ -5,3 +5,6 @@
 4) git add .
 5) git commit -m "message" (this only commits locally!)
 6) push changes to remote master with: git push -u origin master
+
+
+THIS WORKS FOR ADDS, EDITS AND DELETES. You do not need to touch the _site directory, this is always automatically generated with jekyll build --watch. 
