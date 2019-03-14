@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Art Of Troubleshooting</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="blog, accent, Daniel Watts, AUGmented Blog, jekyll">
+    <meta name="author" content="Daniel Watts">
+    
+    
+    
+    <meta name="description" content="I will be writing about my journey as a tech consultant and developer.
+">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,300,500,700|Ubuntu:400,300,300italic,500,700|Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="alternate" type="application/rss+xml" title="AUGmented Blog RSS" href="/feed.xml" />
+    <link rel="stylesheet" href="/css/main.css">
+    
+        <link rel="icon" type="image/ico" href="images/favicon.ico">
+        <link rel="shortcut-icon" type="image/ico" href="images/favicon.ico">
+    
+    
+        <link rel="author" href="https://twitter.com/augitltd">
+    
+    <!-- Facebook Open Graph -->
+    <meta name="og:description" content="I will be writing about my journey as a tech consultant and developer.
+">
+    <meta name="og:title" content="AUGmented Blog">
+    <meta name="og:url" content="http://frogoil.github.io.com/blog/the-art-of-troubleshooting.html">
+    <meta name="og:type" content="article">
+    
+        <meta name="og:image" content="images/accent.png">
+    
+    
+        <meta name="fb:admins" content="augitltd">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="AUGmented Blog">
+    <meta name="twitter:description" content="I will be writing about my journey as a tech consultant and developer.
+">
+    <meta name="twitter:url" content="http://frogoil.github.io.com/blog/the-art-of-troubleshooting.html">
+    
+        <meta name="twitter:image" content="http://ankitsultana.com/images/accent.png?1234">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <nav class="navbar">
+                <a href="/">
+                    <span class="alignable pull-left back-outer">
+                        <span class="alignable pull-left back-inner">
+                        </span>
+                    </span>
+                </a>
+            </nav>
+            <div class="content container">
+    <div class="post-date">
+        <time>March 14, 2019 </time>
+    </div>
+    <h1 class="post-title">The Art Of Troubleshooting</h1>
+    <h2 id="how-to-efficiently-raise-support-requests">How To Efficiently Raise Support Requests</h2>
+
+<p>Many have written articles, even books, on how to solve problems. As human beings, we are built for it, and whether we realise it or not, do it every day. However, in the world of technology, people often look to the local IT ‘wizards’ to help them overcome issues that are plaguing their workflow.</p>
+
+<p>In this article, I will attempt to break down the steps and thought processes that engineers seem to repeat so instinctually. My hope is that somebody who is not technically minded can use this guide to, at best, solve, and at worst, partially diagnose the issue at hand, in order to remove barriers to their workflow, or even remove the need for support entirely. It helps to raise support requests more efficiently and make the life of IT support departments that little bit easier.</p>
+
+<p>While the examples used will be based on technical issues that are faced on an almost daily basis, they should be applicable to various other areas of business and even everyday life. It’s easy to get caught in a spin when things aren’t working as expected, but by taking a step back and approaching things methodically, we should be able to lessen the stress we cause ourselves, and better understand the tools and processes we work with.</p>
+
+<p>When we go to A&amp;E, we are usually seen in triage before being directed toward the relevant doctor or ward. This is to ascertain the severity and general nature of the problem at hand. We often self diagnose before we’ve even seen a professional, and depending on where we sit in the hypochondriac spectrum, we might work ourselves up about nothing, or underestimate the impact of the issue. We don’t all have medical training, so we can’t all be expected to understand exactly what is happening, but the way we communicate the symptoms is the key to reaching a logical conclusion quickly.</p>
+
+<hr />
+
+<h2 id="tip-0-turn-it-off-and-on-again">Tip 0: Turn it off and on again</h2>
+
+<p>It might sound clichéd, but if you can get away with doing this without losing any work, <strong>do it</strong>. We are not joking when we say it fixes a large majority of problems reported. Seriously, give it a shot.</p>
+
+<hr />
+
+<h2 id="tip-1-learn-the-difference-between-symptom-and-impact">Tip 1: Learn the difference between symptom and impact</h2>
+
+<p>Before you raise a support request, it’s important to communicate the <strong>symptoms</strong> and the <strong>impact</strong> of those very clearly, and separately.</p>
+
+<p>The <strong>symptoms are the direct, measurable effects on the system</strong>. These are helpful in the troubleshooting process, and should be outlined in purely logical and objective ways where possible.</p>
+
+<p>The <strong>impacts are the indirect results of the symptoms being apparent</strong>. These are helpful in measuring the severity of the request. They should be explained in terms of impact to day to day activities and workflow.</p>
+
+<p>Both are equally important to clarify. Stating in a request ‘<em>my email is not working and we have an important tax deadline to hit in one hour</em>’ clearly explains that the problem needs to be fixed quickly, but not what the nature of the problem is exactly. On the other hand, ‘<em>when I click the reply button, I receive an error message as per the attached screenshot</em>’ describes the symptoms of the problem quite well, but not how severely it should be treated. This can result in the issue been marked at a low priority when in reality, it could be life or death for your department.</p>
+
+<p>It’s very important, and respectful, to remember that your ticket is one amongst many. Without the priority being clearly indicated at a glance, the support team will not know where to place you in their (likely very long) to-do list. It’s is your responsibility to communicate clearly with them as much as it is theirs to respond appropriately. That being said, <strong>do not mark your tickets as high priority unless they are business critical</strong>. If you have clearly outlined the impact of the issue in your request, the engineers should be able to prioritise appropriately.</p>
+
+<p>When writing your support request, be as detailed as possible; this will often ensure you are seen more quickly and receive a better quality of service. One way to lay it out is as follows:</p>
+
+<p><strong>Symptoms of the problem and how to replicate:</strong></p>
+
+<p>Step 1: Open Software Package</p>
+
+<p>Step 2: Press New Email</p>
+
+<p>Step 3: Click Attach Button</p>
+
+<p>Step 4: Select Document.PDF and click ‘Accept’</p>
+
+<p>Error Appears Here (Screenshot Attached)</p>
+
+<p><strong>Impacts of the problem and areas of work/business affected:</strong></p>
+
+<p>E.g. “<em>I must send this PDF file out within the hour to hit important tax deadline, missing this deadline will result in fines.</em>”</p>
+
+<p>This layout is straight to the point, can be read over by a support professional quickly, and means that they can quickly test the process from their end before coming to see you with a clear idea of what might be causing the issue.</p>
+
+<p>Note that by including the process step by step and the particular files and programs used, it makes it much simpler to ascertain whether the issue is localised to your computer, related to the document/software itself, or more generalised to the infrastructure or software in question. More on this in the next section.</p>
+
+<hr />
+
+<h2 id="tip-2-self-triage-by-process-of-elimination">Tip 2: Self triage by process of elimination</h2>
+
+<p>General troubleshooting might seem complicated and technical, but is really a simple process of elimination. The fix might require more technical know-how, but finding out where the problem actually exists is a skill that anyone can learn. This might seem slightly tedious at first, and you might say ‘<em>that’s not what I’m paid to do</em>’, but think about it like this:</p>
+
+<p>You go to A&amp;E because of a severe pain in your chest.</p>
+<ul>
+  <li>Saying: “<em>I have a severe pain in my chest</em>” doesn’t give the medical professional much to go on; they are left asking all of the questions and running countless tests on you. You’re left in pain for longer, and it takes up more of everyone’s time.</li>
+  <li>More than likely, you’ve noticed some patterns in the pain. It might be that it only hurts in the mornings, and only when you’ve slept on your left side, maybe it only hurts when you twist at the hip. You know this because you’ve made an effort to try different approaches, primarily to rid yourself of it, but also partly to understand the nature of it more clearly. Reporting this information to your doctor hugely improves your odds of appropriate treatment and reduces the time you’ll be suffering.</li>
+</ul>
+
+<p>The same steps would apply to something like a sprained ankle; you move and twist it in different ways, apply pressure from different angles, to see what hurts and what doesn’t.</p>
+
+<p>If you come across a technical problem, go back to the beginning, and see if you can cause it to happen again in the same way. This is called <strong>replicating the issue</strong>. Being able to lay out detailed steps of how the problem was encountered is invaluable information in the reporting process. Computers are logical machines, and most (but not all) patterns of behaviour are predictable once identified.</p>
+
+<p>As soon as you are able to intentionally create the problem repeatedly, it’s time to carry out some initial diagnostics. To do this, you should write down each step, and establish whether there is an alternative way to reach the next one. You’ll find this is more common than you expect, and just requires you to look at each action you take in a bit more detail.</p>
+
+<p>For example, here is a generalist approach to outlining replication steps:</p>
+<ul>
+  <li>Step 1: Open Mail App.</li>
+  <li>Step 2: Write new email.</li>
+  <li>Step 3: Attach document.</li>
+  <li>Step 4: Hit Send.</li>
+  <li>Step 5: Receive Error Message.</li>
+</ul>
+
+<p>Sending something like this to your support team not only limits how much information they have to work with, but requires them to take over your machine and waste more of your time, as well as everybody else who is waiting for support. To help optimize the support service company-wide, you could do a bit of expansion at each stage in the process. Think about <strong>how you do each step</strong> and <strong>how you could do it differently</strong>. Try the alternative approaches and see if the result varies. You should <strong>always work in reverse from the point the issue appears</strong>.</p>
+
+<hr />
+
+<h3 id="troubleshooting-breakdown">Troubleshooting Breakdown</h3>
+
+<p>In our example, the error appears at <strong>Step 4</strong>, after we ‘Hit Send’. So let’s see if there are some alternative approaches that you can try, followed by logging the result of each attempt.</p>
+
+<p><img src="images/Troubleshoot_2.PNG" alt="Troubleshooting_2" /></p>
+
+<p>At this point, we might not be able to think of another way to change this step. We therefore suspect that the ‘Send’ step is not at fault, so we go back again to <strong>Step 3</strong>:</p>
+
+<p><img src="images/Troubleshoot_3.PNG" alt="Troubleshooting_3" /></p>
+
+<p>We have now ruled out the ‘attach process’ being at fault, and we also know the document is not at fault, as it happens with others too. We know that it only affects emails with an attachment, and not those without. We might find there are other steps here, such as changing recipients, emailing external mailboxes instead of internal organizational ones etc. but let us move on to <strong>Step 2</strong>:</p>
+
+<p><img src="images/Troubleshoot_4.PNG" alt="Troubleshooting_4" /></p>
+
+<p><strong>Eureka!</strong> We have managed to bypass the issue. Whilst this isn’t a resolution by any stretch, by carrying out these logical steps, you have done some triage for the support team, and given them a signpost of where they should look for the problem. Thanks to a few minutes of your time, the engineers now know that the issue is only applicable to <strong>New Emails with Attachments</strong> and <strong>not with replies</strong>. You could even go as far as to <strong>ask a colleague to repeat the same steps</strong> and report whether they receive the issue as well. This will be a huge help to the engineer, particularly if they need to travel to your office/desk to carry out further diagnostics. You may have saved them a visit entirely, and allowed them to get stuck straight into finding the solution.</p>
+
+<p>You would report it as simply as:</p>
+
+<p><strong>Symptom</strong>:</p>
+
+<ul>
+  <li><strong>New Emails with Attachments not sending. Error Message Attached</strong>.</li>
+  <li>The problem <strong>does not appear when the attachment is removed</strong>.</li>
+  <li>The problem <strong>does not appear when a reply with attachment is being sent</strong>.</li>
+  <li>The <strong>issue remains regardless of what file is attached</strong>.</li>
+  <li>This <strong>happens on my colleagues desktop as well as my own</strong>.</li>
+</ul>
+
+<p><strong>Impact</strong>:</p>
+
+<p><em>“We have urgent documents to send out by 7:00pm today. Using the reply workaround is not possible in this instance.”</em></p>
+
+<p>This is thoughtfully laid out and provides all of the initial information the support team may need. Not only will they will see this and respond to you much more quickly, but it will free up their time to find a solution without spending time eliminating variables that are irrelevant.</p>
+
+<p>These steps might seem long and arduous, but in reality, <strong>it’s just a few minutes of your time</strong>. As the person reporting the problem or bug, you are in the best position to triage it first hand. It makes life easier for everyone around you, and it’s always good to be on the good side of your support team…</p>
+
+<hr />
+
+<h2 id="tip-3-dont-jump-to-conclusions">Tip 3: Don’t Jump To Conclusions</h2>
+
+<p>Very frequently, somebody will report a problem with a false diagnosis attached. This can be unintentionally misleading to the person answering the call. Take on the mindset that <strong>the source of the problem might not be immediately apparent</strong>.</p>
+
+<p>Follow Tip 2, even if it’s at a basic high level, and don’t diagnose unless you’re 100% certain you know what is at fault.</p>
+
+<p>For example, you might report: “<em>My mouse is broken</em>”.</p>
+
+<p>In response, a new mouse might be sent out to you and the ticket is closed. You plug it into your laptop an hour later, and frustratingly, it’s still not working! You get angry at the support team for not coming to see you and giving you the resolution that you desperately need. By taking a step back before you report, and trying a different mouse (maybe a colleague’s) or the trackpad, you may have realised much sooner that the trackpad works, and it’s in fact the physical USB ports that are at fault. Not only does this prompt the engineer to respond appropriately, but it also means you’ve found a workaround so that you can continue working in the interim.</p>
+
+<p>The same applies in almost every technical situation.</p>
+
+<p>You might find that “<em>Outlook isn’t working</em>” should have been “<em>My WiFi is down</em>” - again, a little bit of critical thinking could have helped identify this before you fruitlessly followed the Step by Step instructions you were sent on how to reset Outlook. “<em>My screen is broken</em>” might be “<em>My docking station has lost power</em>” etc. You wouldn’t go to a doctor and say “<em>I’ve broken my leg</em>” - you might say, “<em>I suspect I’ve broken my leg, due to symptoms X and Y</em>”.</p>
+
+<p>It’s easy to get into a panic when something isn’t working as you expect, but pause for a moment, and you may find things aren’t as bad as they seem.</p>
+
+<hr />
+
+<h2 id="the-support-process">The Support Process</h2>
+
+<p>After you’ve broken down the symptoms and impact of your problem, you will probably need to raise a ticket via whatever support process your organisation employs. There is generally an unspoken etiquette in approaching the service desk teams, but learning the best approach will often result in a faster and more helpful response.</p>
+
+<p>Most support teams have SLA (Service Level Agreements) in place. These give a timescale on initial response and ticket closure deadlines, the metrics of which are later used to improve the team’s performance when reviewed. It’s important to remember that your service desk is likely to have a long list of requests to work through, so by understanding their process, you can do your part to help them get through it more quickly.</p>
+
+<h3 id="walk-ins">Walk-Ins</h3>
+
+<p>If the service desk is physically nearby, it’s tempting to just walk in, get somebody’s attention, and try and get an immediate response. Depending on the policy, they may turn you away and ask you to raise a ticket through the official channel (be it email or a portal), they might raise a ticket on the spot for you, or if you’re lucky, they’ll come and help you immediately. Try not to feel offended if you are turned away, as you may not be aware of just how busy they are. They also have policies in place, and completing tasks without following the process can reflect poorly on the individuals and their management. Factors such as the severity of the problem and how snowed under they are contribute to how the team will respond, but you should try to avoid turning up at the door if things can wait. What feels frustrating and urgent to you in the moment, might not be as pressing as some of the other tickets that are currently being dealt with. Walking in can cause distractions to support staff working through complex issues, so it is best to avoid doing so unless you’re certain it’s a 30 second fix (e.g. “<em>Can you quickly pass me an ink cartridge/new keyboard please?</em>”) or the matter is business critical.</p>
+
+<h3 id="telephone">Telephone</h3>
+
+<p>Some service desks will have a queuing system, others will have direct lines. If you urgently need a problem fixed, it is usually acceptable to call the service desk directly and explain the severity. However, the best practise here is to <strong>raise a ticket first</strong>, and then call to alert the team that you have raised a ticket with all the relevant information. This gives the engineer time to read and process the details, as well as remaining compliant with service desk procedures and SLAs. If your ticket can wait, just raise a ticket - a call is not usually warranted, even if you feel it’ll get things sorted more quickly. Some organisations do prefer direct phone calls over written communication, so if you’re unsure, ask them, or your management, what the best course of action is.</p>
+
+<h3 id="tickets">Tickets</h3>
+
+<p>Most service desks will read tickets almost immediately as they arrive for processing. If it is seen as urgent, it’ll be marked as high priority and bumped up the list accordingly. Just because you’re not getting a reply straight away, it doesn’t mean you have been forgotten about or are being treated unfairly. Again, most support teams have back to back tickets to deal with and will make a fair judgement on where your ticket should be in that queue. Most good platforms for ticket management will have automated response systems, letting you know when a ticket has been raised with a reference number. If the problem is not stopping you from doing your job, you should wait until an engineer gets in touch (don’t forget to include contact details where necessary), but a follow up phone call might be warranted if you genuinely suspect your request has slipped the net.</p>
+
+<hr />
+
+<h2 id="to-conclude">To Conclude</h2>
+
+<p>As somebody who has been on both sides of the fence, both raising and resolving tickets, I can attest to the frustration that can come with it. As support personnel, each ticket is usually completely different to the last, and whilst we have the capacity to understand the technology and troubleshooting methodologies, we are still learning things every day. We don’t know everything, and sometimes we do have to stop and read up on things before we can provide an adequate solution. Technology is imperative to the modern workplace, but with such complexity, things are bound to break - a good service desk is a key component in holding it all together. By taking a bit of time to try and understand the thought processes the engineers go through, we can all do our part to make life just that little bit easier for them and for ourselves. Doing so gives us all a better user experience in the long run, and gives us the space to implement new and exciting solutions that can help transform our working lives.</p>
+
+</div>
+<div class="container">
+    <ul class="rrssb-buttons clearfix">
+    <li class="rrssb-email">
+    <!-- Replace subject with your message using URL Endocding: http://meyerweb.com/eric/tools/dencoder/ -->
+        <a href="mailto:?subject=The Art Of Troubleshooting&amp;body=Check out: http://frogoil.github.io.com/blog/the-art-of-troubleshooting.html">
+            <span class="rrssb-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"><path d="M20.11 26.147c-2.335 1.05-4.36 1.4-7.124 1.4C6.524 27.548.84 22.916.84 15.284.84 7.343 6.602.45 15.4.45c6.854 0 11.8 4.7 11.8 11.252 0 5.684-3.193 9.265-7.398 9.3-1.83 0-3.153-.934-3.347-2.997h-.077c-1.208 1.986-2.96 2.997-5.023 2.997-2.532 0-4.36-1.868-4.36-5.062 0-4.75 3.503-9.07 9.11-9.07 1.713 0 3.7.4 4.6.972l-1.17 7.203c-.387 2.298-.115 3.3 1 3.4 1.674 0 3.774-2.102 3.774-6.58 0-5.06-3.27-8.994-9.304-8.994C9.05 2.87 3.83 7.545 3.83 14.97c0 6.5 4.2 10.2 10 10.202 1.987 0 4.09-.43 5.647-1.245l.634 2.22zM16.647 10.1c-.31-.078-.7-.155-1.207-.155-2.572 0-4.596 2.53-4.596 5.53 0 1.5.7 2.4 1.9 2.4 1.44 0 2.96-1.83 3.31-4.088l.592-3.72z"/></svg></span>
+            <span class="rrssb-text">email</span>
+        </a>
+    </li>
+    <li class="rrssb-facebook">
+<!--  Replace with your URL. For best results, make sure you page has the proper FB Open Graph tags in header: https://developers.facebook.com/docs/opengraph/howtos/maximizing-distribution-media-content/ -->
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://frogoil.github.io.com/blog/the-art-of-troubleshooting.html" class="popup">
+            <span class="rrssb-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29"><path d="M26.4 0H2.6C1.714 0 0 1.715 0 2.6v23.8c0 .884 1.715 2.6 2.6 2.6h12.393V17.988h-3.996v-3.98h3.997v-3.062c0-3.746 2.835-5.97 6.177-5.97 1.6 0 2.444.173 2.845.226v3.792H21.18c-1.817 0-2.156.9-2.156 2.168v2.847h5.045l-.66 3.978h-4.386V29H26.4c.884 0 2.6-1.716 2.6-2.6V2.6c0-.885-1.716-2.6-2.6-2.6z"/></svg></span>
+            <span class="rrssb-text">facebook</span>
+        </a>
+    </li>
+    <li class="rrssb-twitter">
+        <!-- Replace href with your Meta and URL information  -->
+        <a href="https://twitter.com/intent/tweet?text=The Art Of Troubleshooting&amp;url=http://frogoil.github.io.com/blog/the-art-of-troubleshooting.html" class="popup">
+            <span class="rrssb-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"><path d="M24.253 8.756C24.69 17.08 18.297 24.182 9.97 24.62a15.093 15.093 0 0 1-8.86-2.32c2.702.18 5.375-.648 7.507-2.32a5.417 5.417 0 0 1-4.49-3.64c.802.13 1.62.077 2.4-.154a5.416 5.416 0 0 1-4.412-5.11 5.43 5.43 0 0 0 2.168.387A5.416 5.416 0 0 1 2.89 4.498a15.09 15.09 0 0 0 10.913 5.573 5.185 5.185 0 0 1 3.434-6.48 5.18 5.18 0 0 1 5.546 1.682 9.076 9.076 0 0 0 3.33-1.317 5.038 5.038 0 0 1-2.4 2.942 9.068 9.068 0 0 0 3.02-.85 5.05 5.05 0 0 1-2.48 2.71z"/></svg></span>
+            <span class="rrssb-text">twitter</span>
+        </a>
+    </li>
+    <li class="rrssb-linkedin">
+        <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://frogoil.github.io.com/blog/the-art-of-troubleshooting.html&amp;title=The Art Of Troubleshooting&amp;summary=The Art Of Troubleshooting" class="popup">
+            <span class="rrssb-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewbox="0 0 28 28">
+                    <path d="M25.424 15.887v8.447h-4.896v-7.882c0-1.98-.71-3.33-2.48-3.33-1.354 0-2.158.91-2.514 1.802-.13.315-.162.753-.162 1.194v8.216h-4.9s.067-13.35 0-14.73h4.9v2.087c-.01.017-.023.033-.033.05h.032v-.05c.65-1.002 1.812-2.435 4.414-2.435 3.222 0 5.638 2.106 5.638 6.632zM5.348 2.5c-1.676 0-2.772 1.093-2.772 2.54 0 1.42 1.066 2.538 2.717 2.546h.032c1.71 0 2.77-1.132 2.77-2.546C8.056 3.593 7.02 2.5 5.344 2.5h.005zm-2.48 21.834h4.896V9.604H2.867v14.73z"></path>
+                </svg>
+            </span>
+            <span class="rrssb-text">linkedin</span>
+        </a>
+    </li>
+    <li class="rrssb-googleplus">
+        <a href="https://plus.google.com/share?url=http://frogoil.github.io.com/blog/the-art-of-troubleshooting.html" class="popup">
+            <span class="rrssb-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+                    <path d="M21 8.29h-1.95v2.6h-2.6v1.82h2.6v2.6H21v-2.6h2.6v-1.885H21V8.29zM7.614 10.306v2.925h3.9c-.26 1.69-1.755 2.925-3.9 2.925-2.34 0-4.29-2.016-4.29-4.354s1.885-4.353 4.29-4.353c1.104 0 2.014.326 2.794 1.105l2.08-2.08c-1.3-1.17-2.924-1.883-4.874-1.883C3.65 4.586.4 7.835.4 11.8s3.25 7.212 7.214 7.212c4.224 0 6.953-2.988 6.953-7.082 0-.52-.065-1.104-.13-1.624H7.614z"></path>
+                </svg>
+            </span>
+            <span class="rrssb-text">google+</span></a>
+    </li>
+    <li class="rrssb-pinterest">
+        <a href="http://pinterest.com/pin/create/button/?url=http://frogoil.github.io.com/blog/the-art-of-troubleshooting.html&amp;description=The Art Of Troubleshooting"><span class="rrssb-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewbox="0 0 28 28">
+                <path d="M14.02 1.57c-7.06 0-12.784 5.723-12.784 12.785S6.96 27.14 14.02 27.14c7.062 0 12.786-5.725 12.786-12.785 0-7.06-5.724-12.785-12.785-12.785zm1.24 17.085c-1.16-.09-1.648-.666-2.558-1.22-.5 2.627-1.113 5.146-2.925 6.46-.56-3.972.822-6.952 1.462-10.117-1.094-1.84.13-5.545 2.437-4.632 2.837 1.123-2.458 6.842 1.1 7.557 3.71.744 5.226-6.44 2.924-8.775-3.324-3.374-9.677-.077-8.896 4.754.19 1.178 1.408 1.538.49 3.168-2.13-.472-2.764-2.15-2.683-4.388.132-3.662 3.292-6.227 6.46-6.582 4.008-.448 7.772 1.474 8.29 5.24.58 4.254-1.815 8.864-6.1 8.532v.003z"></path>
+            </svg></span><span class="rrssb-text">pinterest</span></a>
+    </li>
+</ul>
+
+</div>
+
+
+    <div class="container">
+    <hr />
+    
+        
+        
+            <div id="img-about">
+                <img class="about-img pull-left" src="images/temp.png">
+            </div>
+        
+        <div class="about-stub">
+            
+            <a class="different-highlight" href="about">
+                <h2 style="font-family: Montserrat">
+                    
+                        Daniel Watts
+                    
+                </h2>
+            </a>
+            
+                <p id="about-description" style="margin-top: 4px;">
+                    Thank you for reading, I welcome your feedback.
+
+                </p>
+            
+        </div>
+    
+</div>
+<div style="clear:both"></div>
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+    <footer>
+    
+
+    
+    <div class="container page-suggestion">
+        
+        
+            <a class="button alignable pull-right" href="http://frogoil.github.io.com/blog/tidy-up-your-data.html">
+                Desktop Cleanup &rarr;
+            </a>
+        
+    </div>
+    <div style="clear:both"></div>
+
+
+    
+    <hr />
+    <div class="user-footer">
+        <div class="copyright alignable pull-left">
+            
+                <h2> &copy;AUGIT</h2>
+            
+        </div>
+        <div class="alignable pull-right">
+            <a target="_blank" href="https://twitter.com/augitltd" class="button">
+                @augitltd
+            </a>
+            <a href="mailto:daniel@augit.co.uk" class="button">
+                mail
+            </a>
+            <a target="_blank" href="http://frogoil.github.io.com/blog/feed.xml" class="button">
+                rss
+            </a>
+        </div>
+    </div>
+    <div style="clear:both"></div>
+    <hr />
+    <div class="theme-footer">
+        <p class="alignable pull-left" style="display: inline-block">
+            Built with <a href="http://jekyllrb.com/" class="different-highlight underline">Jekyll</a> and <a href="http://ankitsultana.com/accent/" class="different-highlight underline">accent</a>
+        </p>
+    </div>
+</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/js/rrssb.min.js"></script>
+
+    
+        <script src="js/anchor.min.js"></script>
+        <script>
+        anchors.options.placement = 'right'
+        anchors.options.class = 'hide'
+        anchors.add()
+        anchors.remove('.post-title')
+        </script>
+    
+    
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69243698-7', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    
+</body>
